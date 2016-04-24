@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper]{geometry}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{epsfig,rotating}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{multirow}
+\usepackage{eurosym}
+\usepackage{dcolumn}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{bm}
+\usepackage{dcolumn}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{subfig}
+\usepackage{subfloat}
+
+\input{Commands.tex}
+
+
+\newcommand*{\titleGM}{\begingroup % Create the command for including the title page in the document
+\hbox{ % Horizontal box
+\hspace*{0.2\textwidth} % Whitespace to the left of the title page
+\rule{1pt}{\textheight} % Vertical line
+\hspace*{0.05\textwidth} % Whitespace between the vertical line and title page text
+\parbox[b]{0.75\textwidth}{ % Paragraph box which restricts text to less than the width of the page
+
+{\noindent\Huge\bfseries The NEXT experiment \\[0.5\baselineskip] for $\bm{\bbonu}$ searches at LSC}\\[2\baselineskip] % Title
+{\LARGE \textit{A status report: April 2016}}\\[4\baselineskip] % Tagline or further description
+{\Large \textsc{The NEXT Collaboration } } % Author name
+
+\vspace{0.5\textheight} % Whitespace between the title block and the publisher
+{\Large \noindent \today}\\[\baselineskip] % Date
+}}
+\endgroup}
+
+
+\begin{document}
+
+
+\begin{titlepage}
+\thispagestyle{empty}
+\titleGM
+\end{titlepage}
+
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+\input{src/Intro.tex}
+\input{src/Infrastructures.tex}
+%\newpage
+\input{src/NEW.tex}
+\input{src/Conclusions.tex}
+
+
+\bibliographystyle{JHEP}
+\bibliography{references}
+
+\end{document}
+%%%
